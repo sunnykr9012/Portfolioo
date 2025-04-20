@@ -50,3 +50,24 @@ document.addEventListener("click", (e) => {
   searchContainer.classList.remove("active");
   searchInput.value = "";
 });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const aboutSection = document.getElementById("about");
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            aboutSection.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(aboutSection);
+  });
+
+  
+
