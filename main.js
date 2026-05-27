@@ -24,7 +24,7 @@ allMobileMenuLinks.forEach((l) => {
   });
 });
 
-// Search icon
+// Search icons
 
 searchIcons.forEach((searchIcon) => {
   searchIcon.addEventListener("click", () => {
